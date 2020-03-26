@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Lettuce Design`,
+    description: `Pexel Matters is a team that vision to create design that are unique and are very usable to the user.`,
+    author: `jessie`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,9 +14,9 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-strapi",
+      resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: "http://localhost:1337",
+        apiURL: 'http://localhost:1337',
         contentTypes: [
           // Content types
         ],

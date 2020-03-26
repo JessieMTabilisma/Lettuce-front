@@ -3,3 +3,19 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.pxm-font {
+  font-family: 'Montserrat', sans-serif;
+}
