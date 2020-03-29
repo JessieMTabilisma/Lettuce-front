@@ -1,10 +1,18 @@
 module.exports = {
   siteMetadata: {
     title: `Lettuce Design`,
-    description: `Pexel Matters is a team that vision to create design that are unique and are very usable to the user.`,
+    description: `Lettuce Design is a team that vision to create design that are unique and are very usable to the user.`,
     author: `jessie`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,7 +42,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
