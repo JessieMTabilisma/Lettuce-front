@@ -10,17 +10,36 @@
     "timestamps": true
   },
   "attributes": {
-    "project_name": {
+    "projectTitle": {
       "type": "string"
     },
-    "project_thumbnail": {
-      "model": "file",
+    "projectThumbnail": {
+      "collection": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
     },
-    "portfolio_date": {
-      "type": "date"
+    "projectDescription": {
+      "type": "text"
+    },
+    "projectGallery": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "projectContent": {
+      "type": "richtext"
+    },
+    "projectCategory": {
+      "type": "enumeration",
+      "enum": [
+        "webApplication",
+        "portfolio",
+        "graphics",
+        "mobileApplication",
+        "maintenance"
+      ]
     }
   }
 }
