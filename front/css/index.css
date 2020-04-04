@@ -22,3 +22,6 @@ body {
 .line {
   text-decoration: line-through;
 }
+.custom-w {
+  width: 300vw;
+}
