@@ -24,9 +24,3 @@ Gallery.defaultProps = {
 
 export default Gallery
 
-postgres://
-rpvtsxbdmnngfw
-b71e47ea8cfb4e0982ef164d367a13869c11e87382e6496d8d502025a55a3797
-ec2-52-86-33-50.compute-1.amazonaws.com
-5432
-daed60mdofh5v2

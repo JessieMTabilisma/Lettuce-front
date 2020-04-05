@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: 'http://localhost:1337',
+        apiURL: 'https://lettuce-company.herokuapp.com/',
         contentTypes: [
           // Content types
           'services',
