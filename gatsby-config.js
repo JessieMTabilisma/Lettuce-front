@@ -1,10 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Lettuce Design`,
+    title: `QuintStyle`,
     description: `Lettuce Design is a team that vision to create design that are unique and are very usable to the user.`,
     author: `jessie`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
+        once: false, // Defines if animation needs to be launched once
+
+        // Advanced Options
+        rootMargin: '100% 100%', // Corresponds to root's bounding box margin
+      },
+    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -26,11 +36,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: 'https://lettuce-company.herokuapp.com/',
+        apiURL: 'http://localhost:1337',
         contentTypes: [
           // Content types
-          'services',
           'portfolios',
+          'services',
+          'teams',
+          'testimonials',
         ],
         queryLimit: 1000,
       },

@@ -12,15 +12,15 @@ const Header = ({ siteTitle }) => {
   return (
     <header className="p-5 bg-white sm:px-5 md:px-16 lg:px-20 xl:px-32">
       <div>
-        <h1 className="pxm-font font-semibold text-black md:text-base lg:text-xl">
+        <h1 className="pxm-font font-semibold text-blue text-2xl md:text-base lg:text-xl ">
           <Link to="/">{siteTitle}</Link>
         </h1>
-        <div>
+        <div className="hidden md:block">
           <ul className="flex float-right -mt-6">
             {pageLink.map(link => {
               if (link.id === 4) {
                 return (
-                  <li className="px-5 py-2 -mt-2 bg-black text-white cursor-pointer shadow-lg hover:shadow-xl">
+                  <li className="px-5 py-2 -mt-2 bg-black text-white cursor-pointer shadow-lg hover:shadow-xl rounded">
                     {link.link}
                   </li>
                 )

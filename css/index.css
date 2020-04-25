@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
   box-sizing: border-box;
@@ -14,8 +15,15 @@
 html,
 body {
   background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-
+.code-font {
+  font-family: 'Press Start 2P', cursive;
+}
 .pxm-font {
   font-family: 'Montserrat', sans-serif;
 }
@@ -24,4 +32,44 @@ body {
 }
 .custom-w {
   width: 300vw;
+}
+.gallery {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  cursor: url('https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png')
+      39 39,
+    auto;
+}
+/* infinite brand */
+.marquee {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
